@@ -9,27 +9,27 @@ class PostCreateView(CreateView):
     model = Post
     fields = "_ _all _ _"
     success_url = reverse_lazy("blog:all")
-    template_name = "blog/Post_form.html"
+    template_name = "blog/post_form.html"
      
 class PostListView(ListView):
     model = Post
-    template_name = "blog/Post_list.html"
+    template_name = "blog/post_list.html"
 
 
 class PostDetailView(DetailView):
     model = Post
-    template_name = "blog/Post_detail.html"
+    template_name = "blog/post_detail.html"
 
 class PostUpdateView(UpdateView):
     model = Post
     fields =  "_ _all _ _"
     success_url = reverse_lazy("blog:all")
-    template_name = "blog/Post_form.html"
+    template_name = "blog/post_form.html"
 
 class PostDeleteView(DeleteView):
     model = Post
     fields = "_ _all _ _"
     success_url = reverse_lazy("blog:all")
-    template_name = "blog/Post_confirm_delete.html"
+    template_name = "blog/post_confirm_delete.html"
 
      
